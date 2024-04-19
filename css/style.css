@@ -1,0 +1,470 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.header .container {
+  padding-top: 50px;
+  padding-bottom: 180px;
+  background-image: url("../moon-rocket.png");
+  background-repeat: no-repeat;
+  background-position: 470px 130px;
+}
+
+
+.header-bot {
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.logo1 {
+  width: 60px;
+  height: 60px;
+  margin-right: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 660px;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  margin-right: 40px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #d4d4d4;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.menu a:active {
+  color: #ccc;
+}
+
+.contacts-menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
+  margin: 0;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: 80px;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-menu li {
+  margin-left: 20px;
+}
+
+.contacts-menu a:hover {
+  opacity: 0.8;
+}
+
+.contacts-menu a:active {
+  opacity: 0.4;
+}
+
+.-menu .icon {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+.menu .icon-mail {
+  background-image: url(../mail-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.menu .icon-phone {
+  background-image: url(../phone-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.us {
+  width: 300px;
+  padding-left: 120px;
+}
+
+.us h1 {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 45px;
+  line-height: 50px;
+  color: white;
+}
+
+.us p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding-left: 5px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #d4d4d4;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 195px;
+  padding: 0 25px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  width: 19px;
+  height: 16px;
+  background-image: url(../right-arrow-dark.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.btn-yellow {
+  background-color: #FFCB06;
+}
+
+.btn-yellow:hover {
+  background-color: white;
+}
+
+.btn-yellow:active {
+  background-color: #FFCB06;
+}
+
+
+.features {
+  padding: 85px 0;
+  background-color: black;
+  color: yellow;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  position: relative;
+  width: 180px;
+  margin-right: 80px;
+  padding-top: 100px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d4d4d4;
+}
+
+.list li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 68px;
+}
+
+.russia::after {
+  background-image: url(../один.png);
+}
+
+.food::after {
+  background-image: url(../два.png);
+}
+
+.pilots::after {
+  background-image: url(../три.png);
+}
+
+.moon::after {
+  background-image: url(../четыре.png);
+}
+
+.columns-container {
+  display: flex;
+}
+
+.columns-container .left-column {
+  width: 440px;
+  margin-right: 80px;
+}
+
+.columns-container .right-column {
+  width: 440px;
+}
+
+.vacation {
+  padding-top: 80px;
+  padding-bottom: 45px;
+}
+
+.vacation .lead {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.recommendations {
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
+
+.recommendations h3 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.recommendationss {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  list-style: none;
+}
+
+.recommendationss li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.recommendationss li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.futer{
+position: absolute;
+width: 1860px;
+height: 354px;
+left: 0px;
+top: 1828px;
+background: #131313;
+}
+.logo2{
+position: absolute;
+width: 60px;
+height: 60px;
+left: 160px;
+top: 60px;
+position: relative;
+}
+.Space{
+  position: relative;
+  color: white;
+  top: 8px;
+  left: 230px;
+}
+.OOO{
+position: absolute;
+width: 162px;
+height: 36px;
+left: 159px;
+top: 230px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #555555;
+}
+.kom{
+/* КОМПАНИЯ */
+
+position: absolute;
+width: 94px;
+height: 17px;
+left: 420px;
+top: 90px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+/* Text */
+color: #D4D4D4;
+}
+.line5{
+/* Line 5 */
+
+position: absolute;
+width: 180px;
+height: 0px;
+left: 419.99px;
+top: 118.93px;
+
+border: 1px solid #555555;
+}
+.is{
+/* История Миссия Команда */
+
+position: relative;
+width: 63px;
+height: 30px;
+left: 419px;
+top: 50px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #888888;
+}
+/* КАТАЛОГ */
+.kat{
+position: absolute;
+width: 75px;
+height: 17px;
+left: 679px;
+top: 90px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+/* Text */
+color: #D4D4D4;
+}
+
+.line6{
+/* Line 6 */
+
+position: absolute;
+width: 180px;
+height: 0px;
+left: 679px;
+top: 119.57px;
+
+border: 1px solid #555555;
+}
+.if{
+/* Полеты Проживание Экскурсии */
+
+position: relative;
+width: 63px;
+height: 30px;
+left: 679px;
+top: -75px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #888888;
+}
+.kon{
+/* КОНТАКТЫ */
+
+position: absolute;
+width: 91px;
+height: 17px;
+left: 938px;
+top: 90px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+/* Text */
+color: #D4D4D4;
+}
+
+.line7{
+/* Line 7 */
+
+position: absolute;
+width: 180px;
+height: 0px;
+left: 939px;
+top: 119px;
+border: 1px solid #555555;
+}
+.ig{
+/* Отправить заявку Схема проезда Время работы */
+
+position: relative;
+width: 131px;
+height: 30px;
+left: 938px;
+top: -200px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #888888;
+}
